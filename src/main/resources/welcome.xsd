@@ -1,0 +1,27 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://it.sistinf.crash/welcome-soap"
+           targetNamespace="http://it.sistinf.crash/welcome-soap" elementFormDefault="qualified">
+
+    <xs:element name="getWelcomeRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="name" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getWelcomeResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="greetings" type="tns:greeting"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="greeting">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="welcome" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>

@@ -1,0 +1,8 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:gs="http://it.sistinf.crash/welcome-soap">
+	<soapenv:Header/>
+    <soapenv:Body>
+    	<gs:getWelcomeRequest>
+		    <gs:name>Andrea</gs:name>
+		</gs:getWelcomeRequest>
+	</soapenv:Body>
+</soapenv:Envelope>
